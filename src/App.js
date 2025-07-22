@@ -1,6 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import { Menus } from './components/Menus';
+import titleBg from './assets/vector.svg'
 
 function App() {
   const [menus, setMenus] = useState([])
@@ -39,6 +40,9 @@ function App() {
 
       <div className='card'>
         <div className='card-content'>
+          <div className='title-image-container'>
+            <img className='title-image' src={titleBg} alt='title-image' />
+          </div>
           <div className='title'>
             <p>Our Collection</p>
           </div>
